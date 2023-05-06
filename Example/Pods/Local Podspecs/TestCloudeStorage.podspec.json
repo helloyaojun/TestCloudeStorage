@@ -1,0 +1,22 @@
+{
+  "name": "TestCloudeStorage",
+  "version": "0.1.0",
+  "summary": "A short description of TestCloudeStorage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yaojun/TestCloudeStorage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yaojun": "cocoyaojun@163.com"
+  },
+  "source": {
+    "git": "https://github.com/yaojun/TestCloudeStorage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "TestCloudeStorage/Classes/**/*"
+}

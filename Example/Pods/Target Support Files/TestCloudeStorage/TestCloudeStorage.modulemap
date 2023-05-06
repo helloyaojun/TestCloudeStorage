@@ -1,0 +1,6 @@
+framework module TestCloudeStorage {
+  umbrella header "TestCloudeStorage-umbrella.h"
+
+  export *
+  module * { export * }
+}
