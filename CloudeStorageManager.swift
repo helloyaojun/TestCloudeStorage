@@ -10,6 +10,7 @@ import UIKit
 class CloudeStorageManager: NSObject {
 
     func testAction() {
-        
+
+        print("1")
     }
 }
