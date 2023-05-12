@@ -1,0 +1,6 @@
+framework module AGConnectStorage {
+  umbrella header "AGConnectStorage.h"
+
+  export *
+  module * { export * }
+}

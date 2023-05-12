@@ -1,9 +1,19 @@
 PODS:
+  - AGConnectAuth (1.9.0.300):
+    - AGConnectCredential (~> 1.4)
+  - AGConnectCore (1.9.0.300):
+    - HMFoundation (~> 1.4)
+  - AGConnectCredential (1.9.0.300):
+    - AGConnectCore (~> 1.4)
+  - AGConnectStorage (1.9.0.300):
+    - AGConnectAuth (~> 1.4)
+    - AGConnectCredential (~> 1.4)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - HMFoundation (1.9.0.300)
   - iOSSnapshotTestCase (8.0.0):
     - iOSSnapshotTestCase/SwiftSupport (= 8.0.0)
   - iOSSnapshotTestCase/Core (8.0.0)
@@ -16,7 +26,8 @@ PODS:
     - iOSSnapshotTestCase (~> 8.0)
     - Nimble
   - Quick (2.2.1)
-  - TestCloudeStorage (0.1.0)
+  - TestCloudeStorage (0.1.1):
+    - AGConnectStorage
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -27,7 +38,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AGConnectAuth
+    - AGConnectCore
+    - AGConnectCredential
+    - AGConnectStorage
     - FBSnapshotTestCase
+    - HMFoundation
     - iOSSnapshotTestCase
     - Nimble
     - Nimble-Snapshots
@@ -38,12 +54,17 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AGConnectAuth: e09b18b4035d245e150fbe94d0e927d1c4cf54f8
+  AGConnectCore: f07ea0cd4aefe5c467b8336ea9fa9474c348a028
+  AGConnectCredential: 50729e5d8fe6bbee87e053ead56e8b4427e276eb
+  AGConnectStorage: 706f00d7cf29c39925827a39537c0e9d53ce122a
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HMFoundation: 37a598de63a67de3ce428ced640bc6123048097b
   iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Nimble-Snapshots: ef281b908c604f78c8313587e25ea92c8ab513d7
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
-  TestCloudeStorage: a947dffd2f8299d00e3f3eb6d66d2871b39a4b27
+  TestCloudeStorage: 76cba86c6441e329a4df6e1e2c576bb0315094fe
 
 PODFILE CHECKSUM: 234fc53a42481938f501a431662852451dce23eb
 

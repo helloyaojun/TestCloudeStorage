@@ -1,11 +1,11 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/TestCloudeStorage"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/TestCloudeStorage" "${PODS_ROOT}/AGConnectAuth" "${PODS_ROOT}/AGConnectCore" "${PODS_ROOT}/AGConnectCredential" "${PODS_ROOT}/AGConnectStorage" "${PODS_ROOT}/HMFoundation" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AGConnectAuth" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AGConnectCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AGConnectCredential" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AGConnectStorage" "${PODS_XCFRAMEWORKS_BUILD_DIR}/HMFoundation"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/TestCloudeStorage/TestCloudeStorage.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
-OTHER_LDFLAGS = $(inherited) -framework "TestCloudeStorage"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "AGConnectAuth" -framework "AGConnectCore" -framework "AGConnectCredential" -framework "AGConnectStorage" -framework "HMFoundation" -framework "Security" -framework "TestCloudeStorage"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
